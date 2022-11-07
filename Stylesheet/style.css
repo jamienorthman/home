@@ -42,17 +42,25 @@ nav li {
   text-align: center;
   padding: 14px 16px;
 }
-
+/* Create two unequal columns that floats next to each other (??)!
+  Left column */
+.row {
+  display: grid;
+}
 .leftcolumn {
-  float: left;
-  width: 70%;
+  grid-column: 1;
+  grid-row: 2;
+  /* float: left;
+  width: 70%; */
 }
 
 /* Right column */
 .rightcolumn {
-  float: left;
+  grid-column: 2;
+  grid-row: 1;
+  /* float: right;
   width: 25%;
-  padding-left: 20px;
+   padding-left: 20px; */
 }
 
 /* Fake image */
@@ -131,59 +139,6 @@ nav li {
   text-align: center;
 }
 
-/*
-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-thead th:nth-child(1) {
-  width: 30%;
-}
-thead th:nth-child(2) {
-  width: 20%;
-}
-thead th:nth-child(3) {
-  width: 15%;
-}
-thead th:nth-child(4) {
-  width: 35%;
-}
-
-th, td {
-  padding: 20px;
-}
-
-th {
-  letter-spacing: 2px;
-}
-
-td {
-  letter-spacing: 1px;
-}
-
-tbody td {
-  text-align: center;
-}
-
-thead {
-  background-color: gray;
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  font-style: italic;
- }
-
-thead th, tfoot th, tfoot td {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
-  border: 1px solid black;
-} */
-
-/* tbody tr:nth-child(even) {
-  background-color: lightgrey;
-} */
-
-
 a {
   text-decoration: none;
   font-weight: 700;
@@ -255,6 +210,28 @@ button:hover {
   cursor: pointer;
 }
 
+.resume {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+.experience {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.education-interests {
+  grid-column: 1;
+  grid-row: 2;
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+.resume-section, .sub-section {
+  color: white;
+}
+
 @media (max-width: 768px) {
   header {
     justify-content: center;
@@ -268,6 +245,12 @@ button:hover {
 
   form {
     text-align: center;
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
