@@ -11,7 +11,12 @@ h1 {
   font-style: italic;
 }
 
-section {
+/*section {
+ 
+}*/
+
+.portfolio-text {
+  text-align: center;
   max-width: 800px;
   margin: auto;
 }
@@ -33,6 +38,7 @@ header, nav {
 nav ul {
   font-size: x-large;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
   color:#38D5A0;
   display: flex;
   }
@@ -42,28 +48,30 @@ nav li {
   text-align: center;
   padding: 14px 16px;
 }
-/* Create two unequal columns that floats next to each other (??)!
-  Left column */
-.row {
+
+.main {
   display: grid;
+  max-width: 800px;
+  margin: auto;
 }
-.leftcolumn {
+
+.information {
   grid-column: 1;
   grid-row: 2;
-  /* float: left;
-  width: 70%; */
+  border-radius: 10px;
 }
 
-/* Right column */
-.rightcolumn {
+.about-me {
   grid-column: 2;
   grid-row: 1;
-  /* float: right;
-  width: 25%;
-   padding-left: 20px; */
 }
 
-/* Fake image */
+.about-me-text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Fake images */
 .fakeimg {
   background-color: #aaa;
   width: 400px;
@@ -73,7 +81,6 @@ nav li {
 .fakeimg2 {
   background-color: #aaa;
   width: 100px;
-  padding: 20px;
 }
 
 /* Add a card effect for articles */
@@ -90,6 +97,7 @@ nav li {
   clear: both;
 }
 
+/* Portfolio */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -141,8 +149,8 @@ nav li {
 
 a {
   text-decoration: none;
-  font-weight: 700;
-  color: #38D5A0;
+  /*font-weight: 700;*/
+  color: rgb(56, 213, 160);
 }
 
 button {
@@ -159,14 +167,18 @@ button:hover {
   color: white;
 }
 
-footer {
+.footer {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
+  margin-top: auto;
 }
+
+/* Contact */
 
 form {
   text-align: center;
   letter-spacing: 1px;
+  margin: auto;
 }
 
 form label {
@@ -210,6 +222,8 @@ button:hover {
   cursor: pointer;
 }
 
+/* Resume */
+
 .resume {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -219,20 +233,36 @@ button:hover {
 .experience {
   grid-column: 2;
   grid-row: 2;
+  max-width: 600px;
+  margin-left: 20px;
 }
 
 .education-interests {
   grid-column: 1;
   grid-row: 2;
   border-right: 1px solid white;
-  padding-right: 10px;
+  padding-right: 30px;
+  margin-left: 20px;
+}
+
+.resume-section {
+  text-decoration: underline;
 }
 
 .resume-section, .sub-section {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me, .information {
+    width: 100%;
+    padding: 0;
+  }
+
   header {
     justify-content: center;
    }
@@ -243,8 +273,20 @@ button:hover {
     padding-right: 20px;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   form {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    margin: 20px;
   }
 
   .resume {
@@ -252,12 +294,11 @@ button:hover {
     flex-direction: column;
     align-items: center;
   }
-}
 
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
+  .education-interests {
+    max-width: 800px;
+    margin: auto;
+    border-right: none;
   }
 }
 
