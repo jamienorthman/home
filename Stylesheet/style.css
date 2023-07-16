@@ -296,8 +296,8 @@ button:hover {
   }
 
   .education-interests {
-    max-width: 800px;
-    margin: auto;
+    max-width: 580px;
+    margin-left: 20px;
     border-right: none;
   }
 }
