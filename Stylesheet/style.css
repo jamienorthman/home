@@ -1,5 +1,4 @@
 body {
-  /*text-align: center;*/
   background-color: #415254;
   color: #38D5A0;
   font-family: 'PT Sans', sans-serif;
@@ -10,10 +9,6 @@ h1 {
   font-family: 'Roboto Mono', monospace;
   font-style: italic;
 }
-
-/*section {
- 
-}*/
 
 .portfolio-text {
   text-align: center;
@@ -74,27 +69,17 @@ nav li {
 /* Fake images */
 .fakeimg {
   background-color: #aaa;
-  width: 400px;
+  max-width: 400px;
   padding: 20px;
 }
 
-.fakeimg2 {
-  background-color: #aaa;
-  width: 100px;
-}
-
-/* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  display: flex;
+  flex-direction: column;
+  min-width: auto;
 }
 
 /* Portfolio */
@@ -149,7 +134,6 @@ nav li {
 
 a {
   text-decoration: none;
-  /*font-weight: 700;*/
   color: rgb(56, 213, 160);
 }
 
