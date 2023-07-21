@@ -54,6 +54,7 @@ nav li {
   grid-column: 1;
   grid-row: 2;
   border-radius: 10px;
+  text-align: center;
 }
 
 .about-me {
@@ -67,10 +68,22 @@ nav li {
 }
 
 /* Fake images */
-.fakeimg {
-  background-color: #aaa;
+.img-container {
   max-width: 400px;
-  padding: 20px;
+  margin: auto;
+  height: 200px;
+  text-align: center;
+}
+
+.tech-stack {
+  max-width: 350px;
+  height: 150px;
+}
+
+.tech-stack-text {
+  margin-top: 0;
+  text-align: center;
+  font-style: italic;
 }
 
 .card {
@@ -103,7 +116,7 @@ nav li {
 }
 
 .box:hover .overlay {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .overlay {
@@ -196,6 +209,10 @@ a:hover {
   color: white;
 }
 
+.tiny-link:hover {
+  background-color: #415254;
+}
+
 .active {
   color: white;
   text-decoration: underline;
@@ -255,6 +272,11 @@ button:hover {
     flex-direction: column;
     align-items: center;
     padding-right: 20px;
+  }
+
+  .tech-stack {
+    width: 300px;
+    height: 125px;
   }
 
   .container {
