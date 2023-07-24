@@ -2,12 +2,19 @@ body {
   background-color: #415254;
   color: #38D5A0;
   font-family: 'PT Sans', sans-serif;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   font-style: italic;
+}
+
+h2, h3, h4 {
+  font-family: 'Roboto Mono', monospace;
 }
 
 .portfolio-text {
@@ -24,7 +31,7 @@ p {
   color: #38D5A0;
   font-family: 'PT Sans', sans-serif;
 }
-
+/* NAV */
 header, nav {
   display: flex;
   justify-content: right;
@@ -43,7 +50,7 @@ nav li {
   text-align: center;
   padding: 14px 16px;
 }
-
+/* Home Page */
 .main {
   display: grid;
   max-width: 800px;
@@ -54,7 +61,6 @@ nav li {
   grid-column: 1;
   grid-row: 2;
   border-radius: 10px;
-  text-align: center;
 }
 
 .about-me {
@@ -62,7 +68,7 @@ nav li {
   grid-row: 1;
 }
 
-.about-me-text {
+.about-me-text, .overview-text, .testimonial-text {
   margin-top: 20px;
   font-size: 18px;
 }
@@ -72,18 +78,6 @@ nav li {
   max-width: 400px;
   margin: auto;
   height: 200px;
-  text-align: center;
-}
-
-.tech-stack {
-  max-width: 350px;
-  height: 150px;
-}
-
-.tech-stack-text {
-  margin-top: 0;
-  text-align: center;
-  font-style: italic;
 }
 
 .card {
@@ -143,11 +137,29 @@ nav li {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 350px;
 }
-
+/* LINKS */
 a {
   text-decoration: none;
   color: rgb(56, 213, 160);
+}
+
+a:hover {
+  color: white;
+}
+
+.tiny-link {
+  text-decoration: underline;
+}
+
+.tiny-link:hover {
+  background-color: #415254;
+}
+
+.active {
+  color: white;
+  text-decoration: underline;
 }
 
 button {
@@ -162,15 +174,22 @@ button {
 
 button:hover {
   color: white;
+  background-color: #38D5A0;
 }
-
-.footer {
+/* Footers */
+.footer, .contact-footer {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   margin-top: auto;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Contact */
+.contact-footer {
+  position: fixed;
+}
+
+/* Form Elements, Contact Page */
 
 form {
   text-align: center;
@@ -196,6 +215,14 @@ input {
   background-color: #415254;
 }
 
+::placeholder {
+  color: white;
+}
+
+label{
+  font-family: 'Roboto Mono', monospace;
+}
+
 textarea {
   border-radius: 7px;
   padding: 5px;
@@ -203,19 +230,6 @@ textarea {
   border: 1px solid white;
   background-color: #415254;
   color: #38D5A0;
-}
-
-a:hover {
-  color: white;
-}
-
-.tiny-link:hover {
-  background-color: #415254;
-}
-
-.active {
-  color: white;
-  text-decoration: underline;
 }
 
 button:hover {
