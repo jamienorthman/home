@@ -8,22 +8,22 @@ body {
 }
 
 h1 {
-  text-align: center;
-  font-family: 'Roboto Mono', monospace;
   font-style: italic;
 }
 
-h2, h3, h4 {
+h1,
+form,
+.portfolio-text {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
   font-family: 'Roboto Mono', monospace;
 }
 
+hr,
+.main,
 .portfolio-text {
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-}
-
-hr {
   max-width: 800px;
 }
 
@@ -31,6 +31,7 @@ p {
   color: #38D5A0;
   font-family: 'PT Sans', sans-serif;
 }
+
 /* NAV */
 header, nav {
   display: flex;
@@ -53,7 +54,6 @@ nav li {
 /* Home Page */
 .main {
   display: grid;
-  max-width: 800px;
   margin: auto;
 }
 
@@ -90,6 +90,11 @@ nav li {
 }
 
 /* Portfolio */
+
+.portfolio-text {
+  margin: auto;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -139,17 +144,24 @@ nav li {
   text-align: center;
   width: 350px;
 }
-/* LINKS */
+/* LINKS except for resume sections */
 a {
   text-decoration: none;
   color: rgb(56, 213, 160);
 }
 
-a:hover {
+a:hover,
+.active,
+.resume-section, 
+.sub-section,
+::placeholder,
+button:hover {
   color: white;
 }
 
-.tiny-link {
+.tiny-link, 
+.active,
+.resume-section {
   text-decoration: underline;
 }
 
@@ -157,23 +169,22 @@ a:hover {
   background-color: #415254;
 }
 
-.active {
-  color: white;
-  text-decoration: underline;
+input,
+button,
+textarea {
+  font-family: 'PT Sans', sans-serif;
+  color: #38D5A0;
+  border: 1px solid white;
+  background-color: #415254;
+  border-radius: 5px;
 }
 
 button {
-  border-radius: 10px;
-  border: 1px solid white;
   font-size: medium;
-  color: #38D5A0;
-  background-color: #415254;
-  font-family: 'PT Sans', sans-serif;
   padding: 10px;
 }
 
 button:hover {
-  color: white;
   background-color: #38D5A0;
 }
 /* Footers */
@@ -185,14 +196,13 @@ button:hover {
   width: 100%;
 }
 
-.contact-footer {
+/*.contact-footer {
   position: fixed;
-}
+}*/
 
 /* Form Elements, Contact Page */
 
 form {
-  text-align: center;
   letter-spacing: 1px;
   margin: auto;
 }
@@ -206,17 +216,9 @@ form label {
   font-family: 'PT Sans', sans-serif;
 }
 
-input {
-  border-radius: 5px;
+input,
+textarea {
   padding: 5px;
-  font-family: 'PT Sans', sans-serif;
-  color: #38D5A0;
-  border: 1px solid white;
-  background-color: #415254;
-}
-
-::placeholder {
-  color: white;
 }
 
 label{
@@ -225,11 +227,6 @@ label{
 
 textarea {
   border-radius: 7px;
-  padding: 5px;
-  font-family: 'PT Sans', sans-serif;
-  border: 1px solid white;
-  background-color: #415254;
-  color: #38D5A0;
 }
 
 button:hover {
@@ -245,27 +242,22 @@ button:hover {
   gap: 20px;
 }
 
+.experience,
+.education-interests {
+  grid-row: 2;
+  margin-left: 20px;
+}
+
 .experience {
   grid-column: 2;
-  grid-row: 2;
   max-width: 600px;
-  margin-left: 20px;
+  
 }
 
 .education-interests {
   grid-column: 1;
-  grid-row: 2;
   border-right: 1px solid white;
   padding-right: 30px;
-  margin-left: 20px;
-}
-
-.resume-section {
-  text-decoration: underline;
-}
-
-.resume-section, .sub-section {
-  color: white;
 }
 
 @media only screen and (max-width: 1000px) {
