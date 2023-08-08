@@ -73,13 +73,6 @@ nav li {
   font-size: 18px;
 }
 
-/* Fake images */
-.img-container {
-  max-width: 400px;
-  margin: auto;
-  height: 200px;
-}
-
 .card {
   background-color: white;
   padding: 20px;
