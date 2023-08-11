@@ -294,6 +294,11 @@ button:hover {
     margin: 20px;
   }
 
+  .portfolio-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .resume {
     display: flex;
     flex-direction: column;
