@@ -84,6 +84,24 @@ nav li {
   min-width: auto;
 }
 
+.skills-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skills-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.skill {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 /* Portfolio */
 
 .portfolio-text {
