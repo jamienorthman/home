@@ -74,7 +74,9 @@ nav li {
 }
 
 .card {
-  background-color: white;
+  background-color: #415254;
+  border: 1px solid white;
+  border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
   display: flex;
