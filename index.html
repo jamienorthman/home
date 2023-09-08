@@ -16,16 +16,16 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="#about" class="active">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
 				<li><a href="resume.html">Resume</a></li>
 			</ul>
 		</nav>
 	</header>
 	<h1>Hi, I'm Miko. Welcome to my website :)</h1>
 	<hr>
-	<section class="main">
+	<section class="main" id="about">
 		<div class="row">
 			<div class="about-me">
 				<div class="card">
@@ -35,6 +35,7 @@
 					</p>
 				</div>
 			</div>
+			<hr>
 			<div class="information">
 				<div class="card">
 					<p class="overview-text">
@@ -54,6 +55,7 @@
 						with the internet has never left me and I am always curious about what new 
 						or alternative technologies are out there.
 					</p>
+					<br>
 					<div class="skills-container">
 						<h2 class="skills-title">Skills:</h2>
 						<div class="skill">Semantic HTML</div>
@@ -61,6 +63,8 @@
 						<div class="skill">Javascript</div>
 						<div class="skill">Git</div>
 						<div class="skill">Command-line</div>
+						<div class="skill">Jest</div>
+						<div class="skill">Firebase</div>
 						<div class="skill">Github</div>
 						<div class="skill">Netlify</div>
 						<div class="skill">Wordpress</div>
@@ -71,21 +75,105 @@
 						<div class="skill">Patience</div>
 					</div>
 				</div>
+				<hr>
 				<div class="card">
-					<h2>Testimonials</h2>
+					<h1>Testimonials</h1>
 					<div class="img-container"></div>
-					<p class="testimonial-text">Client testimonials. More coming soon...</p>
+					<p class="testimonial-text">Miko did a great job assisting us with our Joomla installation
+						and updating our website. It was a pleasure to work with her and we are very happy with
+						the results. 
+					</p>
+					<p class="testimonial-text">
+						— Jacqui Reibold, <em>The Kids English Club</em>
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<br>
-
+	<hr>
+	<h1>My Projects</h1>
+	<section class="portfolio-text" id="projects">
+		
+		<h3>Here you can find my projects that I'm especially proud of.  Hover over the images for some context!</h3>
+        <div class="icon"><a href="https://github.com/jamienorthman" target="_blank"><img src="github-mark.png" width="60px" height="60px"></a></div>
+        <div class="container">
+            <div class="box">
+                <img src="portfolio-imgs/results-summary-screenshot.png">
+                <div class="overlay">
+                    <div class="text"><a href="https://jamienorthman.github.io/results-summary-component/" target="_blank">A results/summary design made using Flexbox, media queries, Json data, as well as JS fetch APIs and promises.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img
+                    src="portfolio-imgs/unit-conversion-screenshot.png">
+                <div class="overlay">
+                    <div class="text"><a href="https://unit-conversion-project.netlify.app/" target="_blank">A unit conversion app that converts metric to imperial units from the user's input. (Javascript)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img
+                    src="portfolio-imgs/passwords-screenshot.png">
+                <div class="overlay">
+                    <div class="text"><a href="https://random-passwords-program.netlify.app/" target="_blank">An app that generates two random passwords when a user clicks a button. (HTML, CSS, Javascript)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img
+                    src="portfolio-imgs/rating-component-screenshot.png">
+                <div class="overlay">
+                    <div class="text"><a href="https://jamienorthman.github.io/interactive-rating-component-main/" target="_blank">An interactive rating component using CSS and Javascript DOM manipulation to record input.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img
+                    src="portfolio-imgs/champions-screenshot-cropped.png">
+                <div class="overlay">
+                    <div class="text"><a href="https://champions-endorsements.netlify.app/" target="_blank">A progressive web app that updates and displays endorsements using Javascript and a Firebase database.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img
+                    src="portfolio-imgs/full-exposure-screenshot.png">
+                <div class="overlay">
+                    <div class="text"><a href="https://jamienorthman.github.io/full-exposure/" target="_blank">An "anti-design" website that uses CSS tooltips and contains a function library in Javascript.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</section>
+	<br>
+	<hr>
+	<section class="main" id="contact">
+		<form action="https://formsubmit.co/440ee752861163444a24d21ff755d129" method="POST">
+			<h1>Contact</h1>
+	
+			<h3>Want to collaborate? Send me a message :)</h3>
+	
+	
+			<input type="text" name="name" placeholder="Your Name" required>
+			<input type="email" name="email" placeholder="Your Email" required>
+			<p class="formtext">
+				<label>Your message:</label>
+			</p>
+			<textarea name="message" cols="40" rows="5" required></textarea>
+			<p><button type="submit">Send!</button></p>
+		</form>
+	</section>
+	
+	<br>
+	<hr>
 	<div class="footer">
 		<footer>
 			&copy; 2023, All rights reserved
 		</footer>
 	</div>
+	<script src="app.js"></script>
 </body>
 
 </html>
