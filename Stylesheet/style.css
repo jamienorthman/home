@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #415254;
+  background: #415254;
   color: #38D5A0;
   font-family: 'PT Sans', sans-serif;
   min-height: 100%;
@@ -12,8 +16,7 @@ h1 {
 }
 
 h1,
-form,
-.portfolio-text {
+form {
   text-align: center;
 }
 
@@ -33,6 +36,12 @@ p {
 }
 
 /* NAV */
+
+/*header {
+  position: sticky;
+  background-color: #6d8284;
+}*/
+
 header, nav {
   display: flex;
   justify-content: right;
@@ -71,11 +80,12 @@ nav li {
 .about-me-text, .overview-text, .testimonial-text {
   margin-top: 20px;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .card {
   background-color: #415254;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
@@ -102,10 +112,19 @@ nav li {
   padding: 5px;
 }
 
+.testimonial-title,
+.contact-title,
+.projects-title {
+  font-size: 36px;
+}
+
 /* Portfolio */
 
 .portfolio-text {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -119,12 +138,14 @@ nav li {
   width: 350px;
   height: 200px;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .box img {
   display: block;
   width: 350px;
   height: 200px;
+  border-radius: 5px;
 }
 
 .box:hover .overlay {
@@ -143,6 +164,7 @@ nav li {
   opacity: 0;
   transition: .5s ease;
   background-color: #38D5A0;
+  border-radius: 5px;
 }
 
 .text {
@@ -157,7 +179,7 @@ nav li {
   text-align: center;
   width: 350px;
 }
-/* LINKS except for resume sections */
+/* LINKS */
 a {
   text-decoration: none;
   color: rgb(56, 213, 160);
@@ -200,8 +222,8 @@ button {
 button:hover {
   background-color: #38D5A0;
 }
-/* Footers */
-.footer, .contact-footer {
+/* Footer */
+.footer {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   margin-top: auto;
@@ -209,15 +231,13 @@ button:hover {
   width: 100%;
 }
 
-/*.contact-footer {
-  position: fixed;
-}*/
-
 /* Form Elements, Contact Page */
 
 form {
   letter-spacing: 1px;
   margin: auto;
+  padding: 40px 120px;
+  border-radius: 5px;
 }
 
 form label {
@@ -248,6 +268,17 @@ button:hover {
 }
 
 /* Resume */
+.resume-header-container {
+  flex-direction: column;
+  max-width: 800px;
+  margin-left: 20px;
+  margin-bottom: 80px;
+}
+
+.resume-header {
+  font-style: normal;
+  display: flex;
+}
 
 .resume {
   display: grid;
@@ -271,6 +302,7 @@ button:hover {
   grid-column: 1;
   border-right: 1px solid white;
   padding-right: 30px;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -293,41 +325,43 @@ button:hover {
     padding-right: 20px;
   }
 
-  .tech-stack {
-    width: 300px;
-    height: 125px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  input {
-    margin: 20px;
-  }
-
-  .portfolio-text {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
+  form,
   .resume {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  form {
+    max-width: 450px;
+  }
+
+  hr {
+    text-align: center;
+    max-width: 350px;
+  }
+
+  input {
+    margin: 20px;
+  }
+
+  .portfolio-text,
+  .education-interests {
+    margin-left: 20px;
+  }
+
+  .container {
+    max-width: 345px;
+    margin-right: 20px;
+  }
+
+  .resume, .portfolio-text 
+  .resume-header-container {
+    margin-right: 20px;
+  }
+
   .education-interests {
     max-width: 580px;
-    margin-left: 20px;
     border-right: none;
   }
 }
