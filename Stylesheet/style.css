@@ -112,14 +112,19 @@ nav li {
   padding: 5px;
 }
 
+.testimonial-title,
+.contact-title,
+.projects-title {
+  font-size: 36px;
+}
+
 /* Portfolio */
 
 .portfolio-text {
   margin: auto;
-}
-
-.icon {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -263,6 +268,17 @@ button:hover {
 }
 
 /* Resume */
+.resume-header-container {
+  flex-direction: column;
+  max-width: 800px;
+  margin-left: 20px;
+  margin-bottom: 80px;
+}
+
+.resume-header {
+  font-style: normal;
+  display: flex;
+}
 
 .resume {
   display: grid;
@@ -309,41 +325,43 @@ button:hover {
     padding-right: 20px;
   }
 
-  .tech-stack {
-    width: 300px;
-    height: 125px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  input {
-    margin: 20px;
-  }
-
-  .portfolio-text {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
+  form,
   .resume {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  form {
+    max-width: 450px;
+  }
+
+  hr {
+    text-align: center;
+    max-width: 350px;
+  }
+
+  input {
+    margin: 20px;
+  }
+
+  .portfolio-text,
+  .education-interests {
+    margin-left: 20px;
+  }
+
+  .container {
+    max-width: 345px;
+    margin-right: 20px;
+  }
+
+  .resume, .portfolio-text 
+  .resume-header-container {
+    margin-right: 20px;
+  }
+
   .education-interests {
     max-width: 580px;
-    margin-left: 20px;
     border-right: none;
   }
 }
