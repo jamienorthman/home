@@ -5,15 +5,11 @@ html {
 
 body {
   background: #415254;
-  color: #38D5A0;
-  font-family: 'PT Sans', sans-serif;
+  color: #d7d4d4;
+  font-family: 'Open Sans', sans-serif;
   height: 100vh;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-style: italic;
 }
 
 h1,
@@ -22,7 +18,13 @@ form {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+.main-title {
+  font-size: 50px;
+  
 }
 
 hr,
@@ -31,9 +33,15 @@ hr,
   max-width: 800px;
 }
 
+hr {
+  box-shadow: 2px 2px 3px black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 p {
-  color: #38D5A0;
-  font-family: 'PT Sans', sans-serif;
+  color: #d7d4d4;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* NAV */
@@ -50,9 +58,9 @@ header, nav {
 
 nav ul {
   font-size: x-large;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
-  color:#38D5A0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #d7d4d4;
   display: flex;
   }
 
@@ -61,6 +69,15 @@ nav li {
   text-align: center;
   padding: 14px 16px;
 }
+
+nav li a {
+  color: #d7d4d4;
+}
+
+nav li a:hover {
+  text-shadow: 2px 2px 3px black;
+}
+
 /* Home Page */
 .main {
   display: grid;
@@ -94,11 +111,34 @@ nav li {
   min-width: auto;
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+/*.hidden2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show2 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}*/
+
 .skills-container {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 20px;
+  /*overflow: hidden;*/
 }
 
 .skills-title {
@@ -108,9 +148,24 @@ nav li {
 
 .skill {
   border: 1px solid white;
+  border: none;
+  box-shadow: 1px 1px 1px 2px black;
   border-radius: 5px;
   padding: 5px;
+  /*animation-name: slide-in;
+  animation-duration: 1s;*/
 }
+
+/*@keyframes slide-in {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}*/
 
 .testimonial-title,
 .contact-title,
@@ -126,6 +181,7 @@ nav li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }
 
 .container {
@@ -164,12 +220,12 @@ nav li {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #38D5A0;
+  background-color: #d7d4d4;
   border-radius: 5px;
 }
 
 .text {
-  color: white;
+  color: #415254;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -180,18 +236,19 @@ nav li {
   text-align: center;
   width: 350px;
 }
-/* LINKS */
+/* LINKS (mostly) */
 a {
   text-decoration: none;
-  color: rgb(56, 213, 160);
+  color: #415254;
 }
 
-a:hover,
-.active,
+button:hover {
+ color: #415254;
+}
+
 .resume-section, 
 .sub-section,
-::placeholder,
-button:hover {
+::placeholder {
   color: white;
 }
 
@@ -208,8 +265,8 @@ button:hover {
 input,
 button,
 textarea {
-  font-family: 'PT Sans', sans-serif;
-  color: #38D5A0;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
   border: 1px solid white;
   background-color: #415254;
   border-radius: 5px;
@@ -221,12 +278,13 @@ button {
 }
 
 button:hover {
-  background-color: #38D5A0;
+  background-color: #d7d4d4;
+  color: #415254;
 }
 /* Footer */
 .footer {
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   margin-top: auto;
   bottom: 0;
   width: 100%;
@@ -237,6 +295,7 @@ button:hover {
   background: linear-gradient(0deg, hsl(186, 12.8%, 29.2%, 1.0), hsl(196, 32%, 42%, 0.9));
   max-width: 800px;
   margin: auto;
+  border-radius: 5px;
 }
 
 form {
@@ -248,20 +307,17 @@ form {
 
 form label {
   font-weight: bold;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 2px black;
 }
 
 .formtext {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input,
 textarea {
   padding: 5px;
-}
-
-label{
-  font-family: 'Roboto Mono', monospace;
 }
 
 textarea {
@@ -332,6 +388,10 @@ button:hover {
     padding-right: 20px;
   }
 
+  .portfolio-text {
+    padding-left: 20px;;
+  }
+
   form,
   .resume {
     display: flex;
@@ -352,7 +412,6 @@ button:hover {
     margin: 20px;
   }
 
-  .portfolio-text,
   .education-interests {
     margin-left: 20px;
   }
@@ -373,4 +432,8 @@ button:hover {
   }
 }
 
-
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

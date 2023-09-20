@@ -6,9 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,600;1,600&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="Stylesheet/style.css">
 </head>
 
@@ -16,20 +14,19 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#about" class="active">About</a></li>
+				<li><a href="#about">About</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="resume.html" target="_blank">Resume</a></li>
 			</ul>
 		</nav>
 	</header>
-	<h1>Hi, I'm Miko. Welcome to my website :)</h1>
-	<hr>
+	<h1 class="main-title">Hi, I'm Miko.</h1>
+	
 	<section class="main" id="about">
 		<div class="row">
 			<div class="about-me">
 				<div class="card">
-					<img src="butterflyimage353.gif" alt="butterfly flying from left to right and changing colors. sourced from gifcities.org">
 					<p class="about-me-text">I am a Frontend Web Developer based in Germany. 
 						 With a background in media studies and the arts, I bring a critical, yet empathetic approach to my work. 
 					</p>
@@ -56,7 +53,7 @@
 						or alternative technologies are out there.
 					</p>
 					<br>
-					<div class="skills-container">
+					<div class="skills-container hidden">
 						<h2 class="skills-title">Skills:</h2>
 						<div class="skill">Semantic HTML</div>
 						<div class="skill">CSS Flexbox/Grid</div>
@@ -77,7 +74,7 @@
 					</div>
 				</div>
 				<hr>
-				<div class="card">
+				<div class="card hidden">
 					<h1 class="testimonial-title">Testimonials</h1>
 					<div class="img-container"></div>
 					<p class="testimonial-text">Miko did a great job assisting us with our Joomla installation
@@ -94,7 +91,7 @@
 	<br>
 	<hr>
 	
-	<section class="portfolio-text" id="projects">
+	<section class="portfolio-text hidden" id="projects">
 		<h1 class="projects-title">My Projects</h1>
 		<h3 class="portfolio-subtitle">Hover over the images for some context!</h3>
         <div class="icon"><a href="https://github.com/jamienorthman" target="_blank"><img src="github-mark.png" width="60px" height="60px"></a></div>
@@ -102,7 +99,7 @@
             <div class="box">
                 <img src="portfolio-imgs/results-summary-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://jamienorthman.github.io/results-summary-component/" target="_blank">A results/summary design made using Flexbox, media queries, Json data, as well as JS fetch APIs and promises.</a>
+                    <div class="text"><a href="https://jamienorthman.github.io/results-summary-component/" target="_blank">A results/summary design made using Flexbox and media queries. Javascript promises are also incorporated to fetch data from a JSON file.</a>
                     </div>
                 </div>
             </div>
@@ -142,7 +139,7 @@
                 <img
                     src="portfolio-imgs/full-exposure-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://jamienorthman.github.io/full-exposure/" target="_blank">An "anti-design" website that uses CSS tooltips and contains a function library in Javascript.</a>
+                    <div class="text"><a href="https://jamienorthman.github.io/full-exposure/" target="_blank">An "anti-design" website that uses Javascript array methods to find related euphemisms based on matching tags.</a>
                     </div>
                 </div>
             </div>
@@ -150,7 +147,7 @@
 	</section>
 	<br>
 	<hr>
-	<section class="contact" id="contact">
+	<section class="contact hidden" id="contact">
 		<form action="https://formsubmit.co/440ee752861163444a24d21ff755d129" method="POST">
 			<h1 class="contact-title">Contact</h1>
 	
@@ -169,12 +166,12 @@
 	
 	<br>
 	<hr>
-	<div class="footer">
+	<div class="footer hidden">
 		<footer>
 			&copy; 2023, All rights reserved
 		</footer>
 	</div>
-	<script src="app.js"></script>
+	<script defer src="app.js"></script>
 </body>
 
 </html>
