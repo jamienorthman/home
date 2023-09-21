@@ -43,7 +43,6 @@ h1, h2, h3, h4 {
   50% { border-color: transparent }
 }
 
-
 hr,
 .main,
 .portfolio-text {
@@ -330,6 +329,7 @@ form label {
 
 .formtext {
   font-family: 'Open Sans', sans-serif;
+  width: 150px;
 }
 
 input,
@@ -386,11 +386,15 @@ button:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .main {
     display: flex;
     flex-direction: column;
     margin: auto;
-    max-width: 400px;
   }
 
   .main-title {
