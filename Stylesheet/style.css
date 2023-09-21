@@ -24,8 +24,25 @@ h1, h2, h3, h4 {
 
 .main-title {
   font-size: 50px;
-  
+  width: 14ch;
+  overflow: hidden;
+  border-right: .15em solid #d7d4d4;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 2s steps(14),
+    blinking .5s step-end infinite;
 }
+
+@keyframes typing {
+  from { width: 0 }
+}
+
+@keyframes blinking {
+  50% { border-color: transparent }
+}
+
 
 hr,
 .main,
@@ -372,7 +389,14 @@ button:hover {
   .main {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    max-width: 400px;
   }
+
+  .main-title {
+    font-size: 40px;
+  }
+
   .about-me, .information {
     width: 100%;
     padding: 0;
