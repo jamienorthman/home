@@ -244,12 +244,26 @@ form {
   margin: auto;
   padding: 40px 120px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
 }
 
 form label {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 1px 1px 2px black;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.textarea-container {
+  margin-right: 50px;
 }
 
 input,
@@ -267,19 +281,28 @@ textarea {
   padding: 5px;
 }
 
+input {
+  margin-top: 10px;
+  width: 307px;
+}
+
 textarea {
   border-radius: 7px;
+  vertical-align: top;
 }
 
 button {
   font-size: medium;
-  padding: 10px;
+  padding: 10px 130px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 80px;
 }
 
 button:hover {
   cursor: pointer;
   background-color: #d7d4d4;
   color: #415254;
+  box-shadow: 2px 2px 3px black;
 }
 
 .resume-section, 
@@ -382,8 +405,21 @@ button:hover {
     align-items: center;
   }
 
-  form {
-    max-width: 450px;
+  .input-container,
+  .textarea-container,
+  button {
+    max-width: 350px;
+  }
+
+  .textarea-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 50px;
+  }
+
+  button {
+    margin-right: 80px;
   }
 
   hr {

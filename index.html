@@ -57,9 +57,10 @@
 						<h2 class="skills-title">Skills:</h2>
 						<div class="skill">Semantic HTML</div>
 						<div class="skill">CSS Flexbox/Grid</div>
-						<div class="skill">Javascript</div>
+						<div class="skill">JavaScript</div>
 						<div class="skill">Git</div>
-						<div class="skill">Command-line</div>
+						<div class="skill">CLI</div>
+						<div class="skill">Node.js/npm</div>
 						<div class="skill">Jest</div>
 						<div class="skill">Firebase</div>
 						<div class="skill">Github</div>
@@ -99,7 +100,7 @@
             <div class="box">
                 <img src="portfolio-imgs/results-summary-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://jamienorthman.github.io/results-summary-component/" target="_blank">A results/summary design made using Flexbox and media queries. Javascript promises are also incorporated to fetch data from a JSON file.</a>
+                    <div class="text"><a href="https://jamienorthman.github.io/results-summary-component/" target="_blank">A results/summary design made using Flexbox and media queries. JavaScript promises are also incorporated to fetch data from a JSON file.</a>
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@
                 <img
                     src="portfolio-imgs/Screen Shot 2023-09-22 at 6.28.36 PM.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://euphemism-picker.netlify.app/" target="_blank">A clone of Scrimba's "Pumpkin's Purrfect Meme Picker," this app displays a euphemism- and its true meaning -based on category choice. (HTML, CSS, Javascript)</a>
+                    <div class="text"><a href="https://euphemism-picker.netlify.app/" target="_blank">A clone of Scrimba's "Pumpkin's Purrfect Meme Picker," this app displays a euphemism- and its true meaning -based on category choice. (HTML, CSS, JavaScript)</a>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@
                 <img
                     src="portfolio-imgs/unit-conversion-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://unit-conversion-project.netlify.app/" target="_blank">A unit conversion app that converts metric to imperial units from the user's input. (Javascript)</a>
+                    <div class="text"><a href="https://unit-conversion-project.netlify.app/" target="_blank">A unit conversion app that converts metric to imperial units from the user's input. (JavaScript)</a>
                     </div>
                 </div>
             </div>
@@ -123,7 +124,7 @@
                 <img
                     src="portfolio-imgs/passwords-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://random-passwords-program.netlify.app/" target="_blank">An app that generates two random passwords when a user clicks a button. (HTML, CSS, Javascript)</a>
+                    <div class="text"><a href="https://random-passwords-program.netlify.app/" target="_blank">An app that generates two random passwords when a user clicks a button. (HTML, CSS, JavaScript)</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +132,7 @@
                 <img
                     src="portfolio-imgs/rating-component-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://jamienorthman.github.io/interactive-rating-component-main/" target="_blank">An interactive rating component using CSS and Javascript DOM manipulation to record input.</a>
+                    <div class="text"><a href="https://jamienorthman.github.io/interactive-rating-component-main/" target="_blank">An interactive rating component using CSS and JavaScript DOM manipulation to record input.</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +140,7 @@
                 <img
                     src="portfolio-imgs/champions-screenshot-cropped.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://champions-endorsements.netlify.app/" target="_blank">A progressive web app that updates and displays endorsements using Javascript and a Firebase database.</a>
+                    <div class="text"><a href="https://champions-endorsements.netlify.app/" target="_blank">A progressive web app that updates and displays endorsements using JavaScript and a Firebase database.</a>
                     </div>
                 </div>
             </div>
@@ -147,15 +148,15 @@
                 <img
                     src="portfolio-imgs/full-exposure-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://jamienorthman.github.io/full-exposure/" target="_blank">An "anti-design" website that uses Javascript array methods to find related euphemisms based on matching tags.</a>
+                    <div class="text"><a href="https://jamienorthman.github.io/full-exposure/" target="_blank">An "anti-design" website that uses JavaScript array methods to find related euphemisms based on matching tags.</a>
                     </div>
                 </div>
             </div>
 			<div class="box">
                 <img
-                    src="portfolio-imgs/Screen Shot 2023-09-22 at 6.39.53 PM.png">
+                    src="portfolio-imgs/portfolio-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://jamienorthman.github.io/Rock-Paper-Scissors/" target="_blank">No muss, no fuss! Pure JS and one of my first projects. To be played entirely in the console.</a>
+                    <div class="text"><a href="https://mikoann.com/" target="_blank">This website and portfolio, made with &#128151; using HTML, CSS and JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -165,18 +166,25 @@
 	<hr>
 	<section class="contact hidden" id="contact">
 		<form action="https://formsubmit.co/440ee752861163444a24d21ff755d129" method="POST">
-			<h1 class="contact-title">Contact</h1>
-	
-			<h3>Write me :)</h3>
-	
-	
-			<input type="text" name="name" placeholder="Your Name" required>
-			<input type="email" name="email" placeholder="Your Email" required>
-			<p class="formtext">
-				<label>Your message:</label>
-			</p>
-			<textarea name="message" cols="40" rows="5" required></textarea>
-			<p><button type="submit">Send!</button></p>
+			<h1 class="contact-title">Get in touch!</h1>
+			
+			<div class="input-container">
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" placeholder="Your Name" required>
+			</div>
+			<div class="input-container">
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" placeholder="Your Email" required>
+			</div>
+			<br>
+			<div class="textarea-container">
+				<label for="message">Your message:</label>
+				<textarea name="message" id="message" cols="40" rows="8" required></textarea>
+			</div>
+			<br>
+			<button type="submit">Send!</button>
+			
+		
 		</form>
 	</section>
 	
