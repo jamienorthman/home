@@ -246,24 +246,7 @@ form {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   align-items: center;
-}
-
-form label {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  text-shadow: 1px 1px 2px black;
-}
-
-.input-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.textarea-container {
-  margin-right: 50px;
 }
 
 input,
@@ -278,12 +261,13 @@ textarea {
 
 input,
 textarea {
-  padding: 5px;
+  padding: 10px;
+  letter-spacing: 1px;
 }
 
 input {
-  margin-top: 10px;
-  width: 307px;
+  margin-top: 7px;
+  width: 320px;
 }
 
 textarea {
@@ -293,9 +277,11 @@ textarea {
 
 button {
   font-size: medium;
-  padding: 10px 130px;
+  padding: 10px 20px;
+  width: 352px;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 80px;
+  letter-spacing: 1px;
 }
 
 button:hover {
@@ -309,6 +295,10 @@ button:hover {
 .sub-section,
 ::placeholder {
   color: white;
+}
+
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Resume */
@@ -395,7 +385,11 @@ button:hover {
   }
 
   .portfolio-text {
-    padding-left: 20px;;
+    padding-left: 20px;
+  }
+
+  .contact-title {
+    font-size: 28px;
   }
 
   form,
@@ -404,24 +398,17 @@ button:hover {
     flex-direction: column;
     align-items: center;
   }
+  
+  form {
+    max-width: 375px;
+  }
 
-  .input-container,
-  .textarea-container,
+  input,
+  textarea,
   button {
-    max-width: 350px;
+    width: 100%;
   }
-
-  .textarea-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-left: 50px;
-  }
-
-  button {
-    margin-right: 80px;
-  }
-
+  
   hr {
     text-align: center;
     max-width: 350px;
