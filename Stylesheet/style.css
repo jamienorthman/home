@@ -62,11 +62,6 @@ p {
 
 /* NAV */
 
-/*header {
-  position: sticky;
-  background-color: #6d8284;
-}*/
-
 header, nav {
   display: flex;
   justify-content: right;
@@ -78,7 +73,7 @@ nav ul {
   font-weight: 400;
   color: #d7d4d4;
   display: flex;
-  }
+}
 
 nav li {
   display: inline;
@@ -88,6 +83,10 @@ nav li {
 
 nav li a {
   color: #d7d4d4;
+}
+
+.hamburger {
+  display: none;
 }
 
 nav li a:hover {
@@ -374,7 +373,38 @@ button:hover {
     padding: 0;
   }
 
-  header {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #415254;
+    max-width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #d7d4d4;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin: 15px;
+  }
+
+  i {
+    width: 30px;
+    height: 30px;
+  }
+  /*header {
     justify-content: center;
    }
   
@@ -382,7 +412,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     padding-right: 20px;
-  }
+  }*/
 
   .portfolio-text {
     padding-left: 20px;

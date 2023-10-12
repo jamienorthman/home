@@ -34,3 +34,22 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el))
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener('click', interactNav);
+
+function interactNav() {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+}
+
+const navLink = document.querySelectorAll('.nav-link');
+
+navLink.forEach(n => n.addEventListener('click', closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}
