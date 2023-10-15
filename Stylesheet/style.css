@@ -1,15 +1,24 @@
 html {
   scroll-behavior: smooth;
-  min-height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-  background: #415254;
+  background-color: hsl(240,100%,50%);
+  background: linear-gradient(0deg, hsl(240,100%,50%), hsla(240,100%,50%, 0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: #d7d4d4;
   font-family: 'Open Sans', sans-serif;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 h1,
@@ -24,14 +33,14 @@ h1, h2, h3, h4 {
 
 .main-title {
   font-size: 50px;
-  width: 14ch;
+  width: 13ch;
   overflow: hidden;
   border-right: .15em solid #d7d4d4;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
   animation: 
-    typing 2s steps(14),
+    typing 2s steps(13),
     blinking .5s step-end infinite;
 }
 
@@ -79,6 +88,7 @@ nav li {
   display: inline;
   text-align: center;
   padding: 14px 16px;
+  text-shadow: 2px 2px 3px black;
 }
 
 nav li a {
@@ -90,7 +100,7 @@ nav li a {
 }
 
 nav li a:hover {
-  text-shadow: 2px 2px 3px black;
+  text-decoration: underline;
 }
 
 /* Home Page */
@@ -117,7 +127,8 @@ nav li a:hover {
 }
 
 .card {
-  background: linear-gradient(0deg, hsl(186, 12.8%, 29.2%, 1.0), hsl(196, 32%, 42%, 0.9));
+  background: hsla(240,100%,50%, 0.4);
+  /*background: linear-gradient(0deg, hsl(186, 12.8%, 29.2%, 1.0), hsl(196, 32%, 42%, 0.9));*/
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
@@ -164,7 +175,7 @@ nav li a:hover {
 /* Portfolio */
 
 .portfolio-text {
-  background: linear-gradient(0deg, hsl(186, 12.8%, 29.2%, 1.0), hsl(196, 32%, 42%, 0.9));
+  background: hsla(240,100%,50%, 0.4);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -213,7 +224,7 @@ nav li a:hover {
 }
 
 .text {
-  color: #415254;
+  color: hsl(240,100%,50%);
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -227,12 +238,12 @@ nav li a:hover {
 /* LINKS */
 a {
   text-decoration: none;
-  color: #415254;
+  color: hsl(240,100%,50%);
 }
 
 /* Form Elements, Contact Page */
 .contact {
-  background: linear-gradient(0deg, hsl(186, 12.8%, 29.2%, 1.0), hsl(196, 32%, 42%, 0.9));
+  background: hsla(240,100%,50%, 0.4);
   max-width: 800px;
   margin: auto;
   border-radius: 5px;
@@ -254,7 +265,7 @@ textarea {
   font-family: 'Open Sans', sans-serif;
   color: white;
   border: 1px solid white;
-  background-color: #415254;
+  background-color: hsl(240,100%,35%);
   border-radius: 5px;
 }
 
@@ -286,7 +297,7 @@ button {
 button:hover {
   cursor: pointer;
   background-color: #d7d4d4;
-  color: #415254;
+  color: hsl(240,100%,35%);
   box-shadow: 2px 2px 3px black;
 }
 
@@ -305,7 +316,7 @@ button:hover {
   flex-direction: column;
   max-width: 800px;
   margin-bottom: 80px;
-  background: linear-gradient(0deg, hsl(186, 12.8%, 29.2%, 1.0), hsl(196, 32%, 42%, 0.9));
+  background: hsla(240,100%,50%, 0.4);
   padding: 20px;
 }
 
@@ -378,12 +389,10 @@ button:hover {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #415254;
+    background-color: hsla(240,100%,35%, 0.7);
     max-width: 100%;
-    border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    border: 1px solid #d7d4d4;
   }
 
   .nav-menu.active {
@@ -391,7 +400,7 @@ button:hover {
   }
 
   .nav-item {
-    margin: 1.5rem 0;
+    margin: 1.5rem 20px;
   }
 
   .hamburger {
@@ -400,19 +409,10 @@ button:hover {
     margin: 15px;
   }
 
-  i {
+  .fa-solid fa-bars {
     width: 30px;
     height: 30px;
   }
-  /*header {
-    justify-content: center;
-   }
-  
-  nav, nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding-right: 20px;
-  }*/
 
   .portfolio-text {
     padding-left: 20px;
