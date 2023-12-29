@@ -3,7 +3,7 @@ const sections = document.querySelectorAll('section[id]')
 window.addEventListener('scroll', navigateToSection)
 
 function navigateToSection() {
-    let scrollY = window.pageYOffset
+    let scrollY = window.scrollY
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight
@@ -23,7 +23,6 @@ function navigateToSection() {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show')
         } else {

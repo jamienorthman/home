@@ -288,7 +288,7 @@ textarea {
   vertical-align: top;
 }
 
-button {
+.submit-btn {
   font-size: medium;
   padding: 10px 20px;
   width: 352px;
@@ -297,7 +297,7 @@ button {
   letter-spacing: 1px;
 }
 
-button:hover {
+.submit-btn:hover {
   cursor: pointer;
   background-color: #d7d4d4;
   color: hsl(240,100%,35%);
@@ -410,6 +410,12 @@ button:hover {
     display: block;
     cursor: pointer;
     margin: 15px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .hamburger:hover {
+    color: hsl(240,100%,35%);
   }
 
   .fa-solid fa-bars {
