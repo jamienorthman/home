@@ -31,7 +31,8 @@
 			<div class="about-me">
 				<div class="card">
 					<p class="about-me-text">I am a Frontend Web Developer, originally from New York City, now based in Darmstadt, Germany. 
-						 With a background in media studies and the arts, I bring a critical, yet empathetic approach to my work. &#128187;
+						I love building responsive and engaging web designs to help small businesses thrive or just to satisfy my need to create! 
+						With a background in media studies and the arts, I bring a critical, yet empathetic approach to my work. &#128187;
 					</p>
 				</div>
 			</div>
@@ -40,18 +41,17 @@
 				<div class="card">
 					<p class="overview-text">
 						As someone who was first online in the early 2000s, I always enjoyed
-						building my own part of the internet even with just a little HTML.
+						making my own part of the internet even with just a little HTML.
 						Never associating myself with being a "coder", I persued my other interests in 
-						the humanities and media, working for art and cultural institutions. While 
-						making a net art-inspired website from scratch for my master thesis project, I 
-						rediscovered my love for coding. I enjoyed not only the creative expression, 
-						but also the direct impact I could make through developing useful tools.
+						writing and publishing, working primarily for art and cultural institutions. While 
+						making a net art-inspired website from scratch, I rediscovered my love for coding. I 
+						enjoyed not only the creative expression, but also the direct impact I could make through 
+						developing useful tools.
 					</p>
 					<p class="overview-text">
 						Through various online resources such as The Odin Project, Scrimba, and Udemy, I have learned how to write 
 						accessible, more-readable code and make fully responsive websites and apps. 
-						I am continuously learning essential problem-solving skills needed 
-						for programming the tools to help people work better. My childhood fascination 
+						I love programming tools that will help people work better. My childhood fascination 
 						with the internet has never left me and I am always curious about what new 
 						or alternative technologies are out there. &#128269;
 					</p>
@@ -101,9 +101,9 @@
         <div class="container">
 
 			<div class="box">
-                <img src="portfolio-imgs/movie-watchlist.png">
+                <img src="portfolio-imgs/quiz-screenshot.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://new-movie-watchlist.netlify.app/" target="_blank">This app searches for movies using the Open Movie Database API and saves selected movies to a watchlist using localStorage. (Async JavaScript, HTML/CSS)</a>
+                    <div class="text"><a href="https://mikos-quiz.netlify.app/" target="_blank">A quiz app made in React that uses the Open Trivia API.</a>
                     </div>
                 </div>
             </div>
@@ -124,12 +124,20 @@
                     </div>
                 </div>
             </div>
+
+			<div class="box">
+                <img src="portfolio-imgs/movie-watchlist.png">
+                <div class="overlay">
+                    <div class="text"><a href="https://new-movie-watchlist.netlify.app/" target="_blank">This app searches for movies using the Open Movie Database API and saves selected movies to a watchlist using localStorage. (Async JavaScript, HTML/CSS)</a>
+                    </div>
+                </div>
+            </div>
             
 			<div class="box">
                 <img
                     src="portfolio-imgs/color-scheme.png">
                 <div class="overlay">
-                    <div class="text"><a href="https://generate-color-scheme.netlify.app/" target="_blank">An app that fetches The Color API to generate color schemes based on the user's chosen seed color. (Async JavaScript, HTML/CSS)</a>
+                    <div class="text"><a href="https://generate-color-scheme.netlify.app/" target="_blank">Using the Color API, this app generates color schemes based on the user's chosen seed color. (Async JavaScript, HTML/CSS)</a>
                     </div>
                 </div>
             </div>
@@ -142,13 +150,7 @@
                 </div>
             </div>
            
-			<div class="box">
-                <img src="portfolio-imgs/champions-screenshot-cropped.png">
-                <div class="overlay">
-                    <div class="text"><a href="https://champions-endorsements.netlify.app/" target="_blank">A progressive web app that updates and displays endorsements using JavaScript and a Firebase database.</a>
-                    </div>
-                </div>
-            </div>
+			
             <div class="box">
                 <img src="portfolio-imgs/full-exposure-screenshot.png">
                 <div class="overlay">
@@ -156,6 +158,7 @@
                     </div>
                 </div>
             </div>
+
 			<div class="box">
                 <img src="portfolio-imgs/portfolio-screenshot.png">
                 <div class="overlay">
@@ -170,16 +173,17 @@
 	<hr>
 	<section class="contact hidden" id="contact">
 		<form action="https://formsubmit.co/440ee752861163444a24d21ff755d129" method="POST">
+			
 			<h1 class="contact-title">Get in touch &#128640;</h1>
 			
-			
+			<label for="name">Name:</label>
 			<input type="text" name="name" id="name" placeholder="Your Name" required>
-
-			
-			<input type="email" name="email" id="email" placeholder="Your Email" required>
-
 			<br>
-				<textarea name="message" id="message" cols="45" rows="9" placeholder="Your message" required></textarea>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="Your Email" required>
+			<br>
+			<label for="message">Your message:</label>
+			<textarea name="message" id="message" cols="50" rows="9" placeholder="Your message" required></textarea>
 			<br>
 			<button class="submit-btn" type="submit">Send!</button>
 			

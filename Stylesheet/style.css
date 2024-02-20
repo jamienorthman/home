@@ -21,8 +21,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1,
-form {
+h1 {
   text-align: center;
 }
 
@@ -248,18 +247,26 @@ a {
 .contact {
   background: hsla(240,100%,50%, 0.4);
   max-width: 800px;
-  margin: auto;
   border-radius: 5px;
 }
 
+.contact,
 form {
-  letter-spacing: 1px;
   margin: auto;
+}
+
+form {
   padding: 40px 120px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+form,
+input,
+textarea {
+  letter-spacing: 1px;
+}
+
+label {
+  display: block;
 }
 
 input,
@@ -275,26 +282,28 @@ textarea {
 input,
 textarea {
   padding: 10px;
-  letter-spacing: 1px;
 }
 
 input {
-  margin-top: 7px;
-  width: 320px;
+  margin-bottom: 1em;
+  width: 90%;
 }
 
 textarea {
   border-radius: 7px;
   vertical-align: top;
+  width: 90%;
+  resize: none;
 }
 
 .submit-btn {
   font-size: medium;
-  padding: 10px 20px;
-  width: 352px;
+  padding: 10px;
+  width: 95%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
+  margin-top: 1em;
 }
 
 .submit-btn:hover {
@@ -418,20 +427,19 @@ textarea {
     color: hsl(240,100%,35%);
   }
 
-  .fa-solid fa-bars {
-    width: 30px;
-    height: 30px;
+  .portfolio-subtitle {
+    margin-left: 0.5em;
   }
 
-  .portfolio-text {
-    padding-left: 20px;
+  .contact {
+    max-width: 100%;
   }
 
   .contact-title {
     font-size: 28px;
   }
 
-  form,
+  .contact,
   .resume {
     display: flex;
     flex-direction: column;
@@ -439,22 +447,19 @@ textarea {
   }
   
   form {
-    max-width: 375px;
+    padding: 0;
   }
 
+  form,
   input,
   textarea,
   button {
-    width: 100%;
+    width: 90%;
   }
   
   hr {
     text-align: center;
     max-width: 350px;
-  }
-
-  input {
-    margin: 20px;
   }
 
   .education-interests {
